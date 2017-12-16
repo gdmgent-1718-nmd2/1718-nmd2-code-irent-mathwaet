@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+@import url('https://fonts.googleapis.com/css?family=Barlow:300');
+
+footer{
+    background-color:rgb(9,33,64);
+    height:440px;
+    color:white;
+    font-family:"Barlow",sans-serif;
+    font-weight:300;
+    font-size:14px;
+    padding-top:30px;
+    .logofooter{
+        width: 150px;
+        margin-bottom:40px;
+    }
+    a{
+        color:white;
+        display:inline;
+        text-transform:uppercase;
+    }
+    a:hover{
+        font-weight:bold;
+        text-decoration:none;
+        color:rgb(255,71,56);
+    }
+    a:active{
+        color:white;
+    }
+    .mailnr{
+        font-family:"Lato",sans-serif;
+        font-weight:300;
+        margin-top:50px;
+        margin-bottom:50px;
+    }
+    .copyright{
+        font-size:12px;
+        color:rgb(134,134,134);
+    }
+}
+
+.socialmediaicon{
+    font-size:20px !important;
+}
+.fa-instagram{
+    padding-left:15px;
+}

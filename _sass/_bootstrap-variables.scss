@@ -2,14 +2,16 @@
 //
 // Put variables overrides here.
 //
+$btn-box-shadow: none;
+$btn-active-box-shadow: none;
 // See _vendor/bootstrap/scss/_variables.scss
 
 //
 // Color system
 //
 
-$indigo:  #6610f2;
-$primary: $indigo;
+$blue:  #18233d;
+$primary: $blue;
 
 // Fonts
 //
@@ -17,4 +19,5 @@ $primary: $indigo;
 
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 
-$font-family-base: Merriweather, serif;
+$font-family-base: Lato, sans-serif;
+
