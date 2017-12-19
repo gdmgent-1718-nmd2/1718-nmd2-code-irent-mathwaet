@@ -2,16 +2,19 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow:300');
 
 footer{
-    background-color:rgb(9,33,64);
-    height:440px;
+    background-color:rgb(24,35,61);
+    height:580px;
     color:white;
     font-family:"Barlow",sans-serif;
     font-weight:300;
     font-size:14px;
-    padding-top:30px;
+    padding-top:60px;
     .logofooter{
-        width: 150px;
+        width:150px;
         margin-bottom:40px;
+    }
+    .introfooter{
+        margin-bottom:30px;
     }
     a{
         color:white;
@@ -24,23 +27,73 @@ footer{
         color:rgb(255,71,56);
     }
     a:active{
-        color:white;
+        color:rgb(255,71,56);
     }
+    .a-tagsocialmedia{
+        display:block;
+        text-transform:lowercase;
+        text-transform:capitalize;
+        color:rgb(134,134,134);
+        font-size:12px;
+        .socialmediaicon{
+            font-size:20px !important;
+            padding-top:10px;
+            padding-right:10px;
+            color:white;
+        }   
+    }
+
     .mailnr{
         font-family:"Lato",sans-serif;
         font-weight:300;
-        margin-top:50px;
-        margin-bottom:50px;
     }
     .copyright{
         font-size:12px;
         color:rgb(134,134,134);
+        margin-top:50px;
+    }
+}
+.rowlinks{
+    margin-bottom:50px;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+footer{
+    height:420px;
+    .logofooter{
+        width: 100px;
+    }
+    a:active{
+        color:rgb(255,71,56);
+    }
+}
+.rowlinks{
+    margin-bottom:0px;
+    .paginalinks{
+        display: block;
     }
 }
 
-.socialmediaicon{
-    font-size:20px !important;
 }
-.fa-instagram{
-    padding-left:15px;
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    footer{
+        a:active{
+            color:white;
+        }
+    }
 }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
