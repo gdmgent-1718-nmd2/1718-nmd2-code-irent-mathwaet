@@ -19,7 +19,7 @@ h1{
     background-color: rgb(255,71,56);
 }
 .wrapper-head{
-    height:80vh; 
+    height:90vh; 
     .logominuten{
         width:270px;
         margin-bottom:60px; 
@@ -35,7 +35,17 @@ h1{
         }
     }
 }
+.scrollarrow{
+    img{
+        margin-top:20px;
+        width:50px;
+    }   
+}
+.scrollarrow:hover{
+    background-image:/images/scrollarrowrood;
+}
 
+    
 .definitie{
     color:rgb(9,33,64);
     margin-top:120px;
@@ -308,7 +318,7 @@ h1{
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     .wrapper-head{ 
-        height:75vh;   
+        height:80vh;   
         .logominuten{
             width:50%;
         }
@@ -355,7 +365,8 @@ h1{
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-.wrapper-head{   
+.wrapper-head{ 
+    height:90vh;  
     .logominuten{
         width:80%;
         margin-left:40px;
