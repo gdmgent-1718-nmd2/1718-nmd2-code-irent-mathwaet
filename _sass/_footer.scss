@@ -3,7 +3,7 @@
 
 footer{
     background-color:rgb(24,35,61);
-    height:580px;
+    height:600px;
     color:white;
     font-family:"Barlow",sans-serif;
     font-weight:300;
@@ -20,6 +20,7 @@ footer{
         color:white;
         display:inline;
         text-transform:uppercase;
+        transition: all 0.2s ease;
     }
     a:hover{
         font-weight:bold;
@@ -55,6 +56,9 @@ footer{
 }
 .rowlinks{
     margin-bottom:50px;
+    .paginalinks{
+        padding-bottom:16px;
+    }
 }
 
 // Extra small devices (portrait phones, less than 576px)
