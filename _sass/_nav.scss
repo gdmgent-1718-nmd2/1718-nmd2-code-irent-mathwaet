@@ -6,13 +6,44 @@ nav{
         font-family:"Barlow",sans-serif;
         text-transform:uppercase;
         li{
-        transition: border 0.5s ease-out;
+            transition: border 0.5s ease-out;
+            height:60px;
+            border-top: 1px solid rgb(134,134,134);
         }
         li:active{
-            border:1px solid white;
+            color:rgb(143,221,178);
+        }
+        li:focus{
+            color:rgb(143,221,178);
         }
     }
 }
+
+/*code nav rechts*/
+
+.indexcity {
+    z-index: 9999;
+  }
+  
+  .right {
+      right: 0 !important;
+      left: 0 !important;
+  }
+  
+  @media only screen and (max-width: 767px) {
+      .navbar-collapse{
+        position: fixed;
+        background-color:rgb(24,35,61);
+        top: 0;
+        transition:all 0.8s ease-out;
+        height: 100%;
+        width: 100%;
+        left: 700px;
+      }
+      .navbar-inverse .navbar-nav>li>a {
+      color: #000;
+      }
+  }
 
 
 
@@ -28,18 +59,18 @@ nav{
 @media (min-width: 768px) {
    nav{
     height:70px;
-   
         ul{
             margin-right:50px;
             li{
                 padding-left:30px;
                 padding-right:30px;
                 transition: border 0.5s ease-out;
-        }
-        li:hover{
-            border:1px solid white;
+                border-top:0px;
             }
-            
+            li:hover{
+                border:1px solid white;
+            }
+
         }
     }
 }
