@@ -9,41 +9,18 @@ nav{
             transition: border 0.5s ease-out;
             height:60px;
             border-top: 1px solid rgb(134,134,134);
-        }
-        li:active{
-            color:rgb(143,221,178);
-        }
-        li:focus{
-            color:rgb(143,221,178);
+
+            a.nav-link:active{
+                color:rgb(143,221,178) !important;
+            }
+            a.nav-link:focus{
+                color:rgb(143,221,178) !important;
+            }
         }
     }
 }
 
-/*code nav rechts*/
 
-.indexcity {
-    z-index: 9999;
-  }
-  
-  .right {
-      right: 0 !important;
-      left: 0 !important;
-  }
-  
-  @media only screen and (max-width: 767px) {
-      .navbar-collapse{
-        position: fixed;
-        background-color:rgb(24,35,61);
-        top: 0;
-        transition:all 0.8s ease-out;
-        height: 100%;
-        width: 100%;
-        left: 700px;
-      }
-      .navbar-inverse .navbar-nav>li>a {
-      color: #000;
-      }
-  }
 
 
 
@@ -66,9 +43,17 @@ nav{
                 padding-right:30px;
                 transition: border 0.5s ease-out;
                 border-top:0px;
+                height:50px;
             }
             li:hover{
                 border:1px solid white;
+            }
+            li:focus{
+                border:1px solid rgb(143,221,178);
+                outline:0px;
+            }
+            li:active{
+                border:2px solid rgb(143,221,178);
             }
 
         }

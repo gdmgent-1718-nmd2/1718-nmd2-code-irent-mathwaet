@@ -6,39 +6,36 @@ permalink: /
 title: home
 ---
 <body>
-
-    <div class="wrapper wrapper-rood wrapper-head d-flex align-items-center">
-        <div class="container">
-
-            <div class="row rowheader">
-                <div class="col-12 col-sm-12 col-lg-7 d-flex justify-content-center">
-                    <div class="logominuten ">
-                        <img src="{{ site.baseurl }}/images/logominuten.svg" alt="logominuten">      
-                    </div>
+<wrapper>
+    <div class="container-fluid fluid-rood fluid-head d-flex align-items-center">
+        
+        <div class="row rowheader">
+            <div class="col-12 col-sm-12 col-lg-7 d-flex justify-content-center">
+                <div class="logominuten">
+                    <img src="{{ site.baseurl }}/images/logominuten.svg" alt="logominuten"> 
                 </div>
-                <div class="col-12 col-sm-12 col-lg-5 text-right introhome d-flex align-items-md-center justify-content-end ">
-                    <p>Hoofdzakelijk bedoeld voor de <br>
-                        tijdsoptimisten onder ons. <br><br>
-                        Daar is niets mis mee. <br><br>
-                        Maar wij geven je toch<br>graag een oplossing.
-                    </p>
-                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-5 text-right introhome d-flex align-items-md-center justify-content-end ">
+                <p>Hoofdzakelijk bedoeld voor de <br>
+                    tijdsoptimisten onder ons. <br><br>
+                    Daar is niets mis mee. <br><br>
+                    Maar wij geven je toch<br>graag een oplossing.
+                </p>
             </div>
         </div>
     </div>
 
         <div class="container">
             <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                        <a href="#test" class="scrollarrow"><img src="{{ site.baseurl }}/images/scrollarrow.svg" alt="scrollpijl"></a>
-                        <a href="#test" class="scrollarrowhover"><img src="{{ site.baseurl }}/images/scrollarrowrood.svg" alt="scrollpijl"></a>
+                <div class="col-12 d-flex justify-content-center div-scrollarrow">
+                        <a href="#test" class="scrollarrow" role="btn"><!-- <img src="{{ site.baseurl }}/images/scrollarrow.svg" alt="scrollpijl">--></a>
                 </div>
             </div>
 
             <div id="test" class="row d-flex justify-content-center">
                 <div class="col-12 text-center definitie">
                     <p class="titeldefinitie">
-                        Tijdsoptimist</p> 
+                        Tijdsoptimist</p>                 
                     <p class="tekstdefinitie">
                         (zn) Persoon die altijd te laat is<br>
                         doordat hij over meer<br>
@@ -47,10 +44,9 @@ title: home
                     </p>
                 </div>
             </div>
-        </div>
-    
-    <div class="wrapper wrapper-blauw wrapper-wiezijnwe">
-        <div class="container ">
+        </div>   
+    <div class="container-fluid fluid-blauw fluid-wiezijnwe">
+        <div class="container">
             <div class="row rowwiezijnwe">
                 <div class="col-12 h1 text-right justify-content-end titelwiezijnwe">
                     <h1>Wie zijn we<br>Wat doen we</h1>
@@ -79,10 +75,9 @@ title: home
         </div>
     </div>
 
-    <div class="wrapper wrapper-rood wrapper-wintijd">
-        <div class="container ">
-
-            <div class="row">
+    <div class="container-fluid fluid-rood fluid-wintijd">
+        <div class="container">
+            <div class="row rowwintijd">
                 <div class="col-12 h1 text-right d-flex justify-content-end titelwintijd">
                     <h1>Win 5<br>minuten<br>tijd</h1>
                 </div>
@@ -102,7 +97,7 @@ title: home
                     <button type="button" class="btn btn btn-outline-primary btn-lg button-win">Win</button>
                 </div>
             </div>
-
         </div>
     </div>
+</wrapper> 
 </body>

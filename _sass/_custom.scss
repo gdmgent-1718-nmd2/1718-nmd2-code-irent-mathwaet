@@ -11,38 +11,52 @@ h1{
     font-family:"Barlow",sans-serif;
     text-transform: uppercase;
     font-weight:800;
-    font-size:50px;
+    font-size:49px;
     color:rgb(9,33,64);
     margin-bottom:20px;
 }
-.wrapper-rood{
+.fluid-rood{
     background-color: rgb(255,71,56);
 }
-.wrapper-head{
-    height:90vh; 
-    .logominuten{
-        width:270px;
-        margin-bottom:60px; 
-    }
-    .introhome{
-        font-family:"Barlow",sans-serif;
-        text-transform: uppercase;
-        color:white;
-        font-weight: 500;
-        font-size: 15px;
-        p{
-            padding-right:50px; 
+.fluid-head{
+    height:90vh;
+        .rowheader{
+            .logominuten{
+                width:270px;
+                margin-bottom:60px; 
+            }
+            .introhome{
+                font-family:"Barlow",sans-serif;
+                text-transform: uppercase;
+                color:white;
+                font-weight: 500;
+                font-size: 15px;
+                p{
+                    padding-right:50px; 
+                }
+            }  
         }
-    }
 }
-.scrollarrow{
-    img{
-        margin-top:20px;
-        width:50px;
-    }   
+
+.div-scrollarrow{   
+    height:60px; 
+        .scrollarrow{
+            background-image:url(images/scrollarrow.svg);
+            background-repeat:no-repeat;
+            background-size:100%;
+            width:50px;
+            margin-top:20px;
+        }
+        .scrollarrow:hover{
+            background-image:url(images/scrollarrowrood.svg);
+        }
+        .scrollarrow:focus{
+            background-image:url(images/scrollarrowrood.svg);
+        }
 }
-.scrollarrow:hover{
-}
+
+
+
 
     
 .definitie{
@@ -62,13 +76,13 @@ h1{
     font-style:italic;
 }
 
-.wrapper-blauw{
+.fluid-blauw{
     background-color:rgb(143,221,178);
 }
 
-.wrapper-wiezijnwe{
+.fluid-wiezijnwe{
     margin-top:120px;
-    height: 730px;
+    height: 760px;
     margin-bottom:230px;
         .titelwiezijnwe{
             margin-top:-30px;
@@ -82,85 +96,47 @@ h1{
         }
 }
 
-.wrapper-wintijd{
+.fluid-wintijd{
     height:310px;
     margin-bottom:200px;
-        .titelwintijd{
-            margin-top:-90px;
-        }
-        .tekstwintijd{
-            color:white;
-            margin-bottom:30px;
-        }
-        .button-win{
-            margin-bottom:100px;
-            border-radius:0;
-            border-width:3px;
-            width:300px;
-            border-color:rgb(9,33,64);
-            color:rgb(9,33,64);
-            font-family:"Barlow",sans-serif;
-            text-transform:uppercase;
-            font-weight:800;
-            font-size:22px;
-        }
-        .button-win:hover{
-            background-color:rgb(9,33,64);
-            color:white;
-            border-color:white;
-        }
-        .button-win:active{
-            border-color:rgb(9,33,64) !important;
-            color:rgb(9,33,64) !important;
-            background-color: inherit !important;
-            box-shadow:none !important;
-        }
-        .button-win:focus{
-            box-shadow:none !important;
-        }
+    .titelwintijd{
+        margin-top:-90px;
+    }
+    .tekstwintijd{
+        color:white;
+        margin-bottom:30px;
+    }
+    .button-win{
+        margin-bottom:100px;
+        border-radius:0;
+        border-width:3px;
+        width:300px;
+        border-color:rgb(9,33,64);
+        color:rgb(9,33,64);
+        font-family:"Barlow",sans-serif;
+        text-transform:uppercase;
+        font-weight:800;
+        font-size:22px;
+    }
+    .button-win:hover{
+        background-color:rgb(9,33,64);
+        color:white;
+        border-color:white;
+    }
+    .button-win:active{
+        border-color:rgb(9,33,64) !important;
+        color:rgb(9,33,64) !important;
+        background-color: inherit !important;
+        box-shadow:none !important;
+    }
+    .button-win:focus{
+        box-shadow:none !important;
+    }   
 }
-
-/*SCROLL DOWN ARROW*/
-
-* {
-    margin: 0;
-    padding: 0;
-  }
-  html, body {
-    height: 100%;
-  }
-  section {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  section::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    content: '';
-    width: 100%;
-    height: 80%;
-    background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
-    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
-  }
-  section h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 2;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font : normal 300 64px/1 'Josefin Sans', sans-serif;
-    text-align: center;
-    white-space: nowrap;
-  }
-  
 
 /*CONTACT*/
 
-.wrapper-contact{
+.fluid-contact{
     margin-top:120px;
     height:600px;
     margin-bottom:150px;
@@ -186,7 +162,7 @@ h1{
         .aarzelniet{
             color:rgb(9,33,64);
             text-transform:uppercase;
-            font-weight:600;
+            font-weight:800;
         }
         .form-group{
             margin-top:30px;
@@ -228,7 +204,7 @@ h1{
 
 /* PRODUCT */
 
-.wrapper-product{
+.fluid-product{
     margin-top:120px;
     height:1650px;
     margin-bottom:120px;
@@ -316,25 +292,29 @@ h1{
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    .wrapper-head{ 
-        height:80vh;   
-        .logominuten{
-            width:50%;
-        }
-        .introhome{
-            padding-right:150px;
-        }
+    .fluid-head{ 
+        height:80vh;  
+        .rowheader{
+            width:100%;
+                .logominuten{
+                width:50%;
+                }
+                .introhome{
+                    padding-right:150px;
+                }
+        } 
+        
     }
 
-    .wrapper-wiezijnwe{
+    .fluid-wiezijnwe{
         height: 640px;
     }
-    .wrapper-wintijd{
+    .fluid-wintijd{
         height:290px;
     }
 
     /*CONTACT*/
-    .wrapper-contact{
+    .fluid-contact{
         height:470px;
         margin-bottom:120px;
         .form{
@@ -343,7 +323,7 @@ h1{
     }
 
     /*PRODUCT*/
-    .wrapper-product{
+    .fluid-product{
         height:1100px;
     }
     .divbutton{
@@ -364,20 +344,28 @@ h1{
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-.wrapper-head{ 
-    height:90vh;  
-    .logominuten{
-        width:80%;
-        margin-left:40px;
-        margin-bottom:0px;
-    }
-    .introhome{
-        padding-right:0px;
-    }
+.fluid-head{ 
+    height:90vh; 
+    .rowheader{
+        .logominuten{
+            width:60%;
+            margin-left:0px;
+            margin-bottom:0px;
+        }
+        .introhome{
+            padding-right:0px;
+            p{
+                padding-right:0px;
+            } 
+        } 
+    }  
 }
 .rowheader{
     display:flex;
     flex-direction:row-reverse; 
+}
+.fluid-wiezijnwe{
+    height: 520px;
 }
 .tablezeven{
     margin:0px;
