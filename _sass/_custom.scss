@@ -55,13 +55,30 @@ h1{
         }
 }
 
+.broodkruimelpad{
+    margin-top:100px;
+        .breadcrumb-item{
+            font-family:"Barlow",sans-serif;
+            text-transform: uppercase;
+            font-size:14px;
+            font-weight:600;
+        }
+        a.breadcrumb-item:hover{
+            text-decoration:none;
+            color:rgb(255,71,56);
 
+        }
+        a.breadcrumb-item:active{
+            text-decoration:none;
+            color:rgb(255,71,56);
+        }
+}
 
 
     
 .definitie{
     color:rgb(9,33,64);
-    margin-top:120px;
+    margin-top:100px;
 }
 
 .titeldefinitie{
@@ -82,7 +99,7 @@ h1{
 
 .fluid-wiezijnwe{
     margin-top:120px;
-    height: 760px;
+    height:752px;
     margin-bottom:230px;
         .titelwiezijnwe{
             margin-top:-30px;
@@ -137,7 +154,7 @@ h1{
 /*CONTACT*/
 
 .fluid-contact{
-    margin-top:120px;
+    margin-top:60px;
     height:600px;
     margin-bottom:150px;
     h1{
@@ -205,7 +222,7 @@ h1{
 /* PRODUCT */
 
 .fluid-product{
-    margin-top:120px;
+    margin-top:60px;
     height:1650px;
     margin-bottom:120px;
     h1{
@@ -307,7 +324,7 @@ h1{
     }
 
     .fluid-wiezijnwe{
-        height: 640px;
+        height:635px;
     }
     .fluid-wintijd{
         height:290px;
@@ -365,11 +382,25 @@ h1{
     flex-direction:row-reverse; 
 }
 .fluid-wiezijnwe{
-    height: 520px;
+    height: 512px;
 }
 .tablezeven{
     margin:0px;
 }
+
+.broodkruimelpad{
+    a.breadcrumb-item:active{
+        text-decoration:none;
+        color:rgb(9,33,64);
+    }
+}
+
+.div-scrollarrow{
+    .scrollarrow:focus{
+        background-image:url(images/scrollarrow.svg);
+    }
+}
+
 }
 
 // Extra large devices (large desktops, 1200px and up)
